@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Контакты</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu {
+            background: #637564;
+            /* Цвет фона */
+            margin: 0;
+            /* Убираем отступы */
+            font-family: Arial, sans-serif;
+            /* Шрифт */
+        }
+
+        li {
+            display: inline-block;
+            list-style: none;
+            /* Убираем маркеры */
+            width: 90px;
+            /* Ширина */
+            text-align: center;
+            /* Выравниваем по центру */
+        }
+
+        .icon {
+            font-size: 2em;
+            /* Размер иконок */
+            display: block;
+            /* Блочный элемент */
+        }
+
+        .menu a {
+            color: #fff;
+            /* Белый цвет */
+            text-decoration: none;
+            /* Убираем подчёркивание у ссылок */
+            padding: 0 0 5px;
+            /* Поле снизу */
+        }
+
+        .content {
+            flex: 1 0 auto;
+        }
+
+        .footer {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li><a href="/index.html"><span class="icon">&#9875;</span>Главная</a></li>
+        <li><a href="/catalog/catalog.html"><span class="icon">&#9776;</span>Каталог</a></li>
+        <li><a href="/reg.html"><span class="icon">&#9998;</span>Регистрация</a></li>
+    </ul>
+
+    <h1>
+        <b>
+            <center>
+                <font style="color: brown;">Контакты</font>
+            </center>
+        </b>
+    </h1>
+    <div class="content">
+        Телефон: 8(888)888-88-88 <br>
+        Почта: futuremarket@market.ru
+        <hr>
+        <center>
+            . <br>
+            . <br>
+            . <br>
+            . <br>
+            . <br>
+            . <br>
+            . <br>
+            . <br>
+            . <br>
+            . <br>
+            . <br>
+            . <br>
+            . <br>
+            . <br>
+        </center>
+    </div>
+    
+    <footer class="footer"><hr />&nbsp;&nbsp;FutureMarket © 2020.<br />&nbsp;&nbsp;Все права защищены. Любое использование
+        материалов данного сайта без разрешения запрещено. <br>
+        &nbsp;&nbsp;<a href="https://geekbrains.ru" target="_blank">GeekBrains</a>
+    </footer>
+</body>
+
+</html>

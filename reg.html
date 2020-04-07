@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        body { margin: 0; }
+        .menu {
+            background: #637564; /* Цвет фона */
+            margin: 0; /* Убираем отступы */
+            font-family: Arial, sans-serif; /* Шрифт */
+        }
+        li {
+            display: inline-block;
+            list-style: none; /* Убираем маркеры */
+            width: 90px; /* Ширина */
+            text-align: center; /* Выравниваем по центру */
+        }
+        .icon {
+            font-size: 2em; /* Размер иконок */
+            display: block; /* Блочный элемент */
+        }
+        .menu a {
+            color: #fff; /* Белый цвет */
+            text-decoration: none; /* Убираем подчёркивание у ссылок */
+            padding: 0 0 5px; /* Поле снизу */
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li><a href="/index.html"><span class="icon">&#9875;</span>Главная</a></li>
+        <li><a href="/catalog/catalog.html"><span class="icon">&#9776;</span>Каталог</a></li>
+        <li><a href="/contakts.html"><span class="icon">&#9990;</span>Контакты</a></li>
+    </ul>
+    <h1>
+        <b>
+            <center><font style="color: brown;">Регистрация</font></center>
+        </b>
+    </h1>
+<form action="#"> <!-- (action=" ") - используется для отправки данных в метод написанный например на JS  -->
+    &nbsp;&nbsp;Ваше имя&nbsp;&nbsp;<input type="text" placeholder="Ваше имя"><br>
+    <br>
+    &nbsp;&nbsp;Пароль&nbsp;&nbsp;<input type="password" placeholder="Пароль"><br>
+    <br>
+    &nbsp;&nbsp;Ваш пол: &nbsp;&nbsp;М <input type="radio" name="pol" checked> Ж <input type="radio" name="pol"> <br>
+    <!-- двум чекбоксам выбора пола даем общее имя (name="pol") чтобы они работали в паре. Атрибут "checked" устанавливает выбор по умолчанию -->
+    <br>
+    &nbsp;&nbsp;Ваши увлечения:&nbsp;&nbsp;Резка <input type="checkbox" >&nbsp;&nbsp;Плавка <input type="checkbox">&nbsp;&nbsp;Выжегание <input type="checkbox">&nbsp;&nbsp;
+    Адский воспламенитель <input type="checkbox" checked><br>
+    <br>
+    &nbsp;&nbsp;<input type="submit" value="Отправить данные"> <input type="reset" value="Сбросить данные">
+</form> <!-- Обьеденили в форму для связки всех элементов (без "form" не будет работать сброс данных и их отправка) -->
+<hr>
+<center>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+    . <br>
+</center>
+<hr />
+    <footer>
+        FutureMarket © 2020.<br />Все права защищены. Любое использование
+        материалов данного сайта без разрешения запрещено.
+    </footer>
+    <a href="https://geekbrains.ru" target="_blank">GeekBrains</a>
+</body>
+</html>
