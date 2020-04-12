@@ -1,48 +1,54 @@
-/*Обнуление*/
-*,*:before,*:after{
-    padding: 0;
+html, body {
     margin: 0;
-    border: 0;
-    box-sizing: border-box;
+    height: 100%;   
 }
-/*Стили для демонстрации*/
-    html,body{
-    height: 100%;
-    }
-    .wrapper{
-    }
-    h1{
-        color: #6214df;
-    }
+body {
+    display: flex;
+    flex-direction: column;
+}
 
-    .block{
-        padding: 50px;
-        max-width: 1170px;
-        margin: 0px auto;
-    }
+.menu {
+    background: #637564;
+    /* Цвет фона */
+    margin: 0;
+    /* Убираем отступы */
+    font-family: Arial, sans-serif;
+    /* Шрифт */
+}
 
-    .block_item {
-        margin: 0px 0px 30px 0px;
-    }
+li {
+    display: inline-block;
+    list-style: none;
+    /* Убираем маркеры */
+    width: 90px;
+    /* Ширина */
+    text-align: center;
+    /* Выравниваем по центру */
+}
 
-    /*Основные стили*/
+.icon {
+    font-size: 2em;
+    /* Размер иконок */
+    display: block;
+    /* Блочный элемент */
+}
 
-    .square {
-        width: 150px;
-        height: 150px;
-        background-color: green;
-    }
-    .triangle-left {
-        width: 0;
-        height: 0;
-        border-top: 50px solid transparent;
-        border-right: 100px solid green;
-        border-bottom: 50px solid transparent;
-    }
-    .triangle-right {
-        width: 0;
-        height: 0;
-        border-top: 50px solid transparent;
-        border-left: 100px solid green;
-        border-bottom: 50px solid transparent;
-    }
+.menu a {
+    color: #fff;
+    /* Белый цвет */
+    text-decoration: none;
+    /* Убираем подчёркивание у ссылок */
+    padding: 0 0 5px;
+    /* Поле снизу */
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+h3 {
+    color: rgb(6, 173, 117);
+}
