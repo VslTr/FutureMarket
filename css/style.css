@@ -1,36 +1,23 @@
 html, body {
     margin: 0;
-    height: 100%;   
+    height: 100%;
+    background-color:#f8f8f8;
 }
 body {
     display: flex;
     flex-direction: column;
 }
 
-.menu {
-    background: #637564;
-    /* Цвет фона */
-    margin: 0;
-    /* Убираем отступы */
-    font-family: Arial, sans-serif;
-    /* Шрифт */
-}
-
-li {
-    display: inline-block;
-    list-style: none;
-    /* Убираем маркеры */
-    width: 90px;
-    /* Ширина */
+h1 {
     text-align: center;
-    /* Выравниваем по центру */
+    color: brown;
 }
 
-.icon {
-    font-size: 2em;
-    /* Размер иконок */
-    display: block;
-    /* Блочный элемент */
+.menu {
+    background: #637564; /* Цвет фона */
+    margin: 0; /* Убираем отступы */
+    font-family: Arial, sans-serif; /* Шрифт */
+    border: 1px inset rgb(127, 158, 126);
 }
 
 .menu a {
@@ -42,13 +29,135 @@ li {
     /* Поле снизу */
 }
 
-.content {
-    flex: 1 0 auto;
+/* Обрашаемся к первому елементу меню тегу "a" */
+.menu li:nth-child(1) a {
+    color: rgb(231, 191, 13);
 }
 
-.footer {
-    flex-shrink: 0;
+/* Выдиляет ссылки меню другим цветом при наведении*/
+.menu li a:hover {
+    color: rgb(51, 80, 52);
 }
+
+.menu li a:active {
+    color: coral;
+}
+
+.li_menu {
+    display: inline-block;
+    list-style: none; /* Убираем маркеры */
+    width: 100px; /* Ширина */
+    text-align: center; /* Выравниваем по центру */
+    border: 1px ridge rgb(104, 138, 104);
+    border-bottom-right-radius: 10px; /* Закругляем углы */
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.icon {
+    font-size: 2em;
+    /* Размер иконок */
+    display: block;
+    /* Блочный элемент */
+}
+
+.content,
+a {
+    flex: 1 0 auto;
+    text-decoration: none;
+    color: green;
+}
+
+a:hover{
+    color: red;
+}
+
+.content ul {
+    color:blue;
+    list-style-type: none;
+}
+
+.footer,
+.footer a {
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
 h3 {
-    color: rgb(6, 173, 117);
+    color: rgb(2, 88, 60);
+    background-color: rgb(213, 219, 213);
+    /*text-align: center; - располижить текст по центру*/
+}
+
+.catalog_menu a {
+    text-decoration: none; /* убирает подчеркивание ссылки*/
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+.catalog_menu div {
+    text-decoration: none;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    color: #707070;
+
+}
+
+.catalog_menu img {
+    border: 4px groove rgb(198, 255, 202);
+}
+
+
+.catalog_menu li a:hover,
+.catalog_menu li a:hover::after {
+    content: " 🔍";
+    color:green;
+}
+
+.catalog_menu li a:active {
+    color: coral;
+}
+
+.catalog_menu li:nth-child(4)::after {
+    content: " - new !!!";
+    color: magenta;
+    text-transform: uppercase;
+}
+
+.ebout {
+    color: black;
+    background: url(/img/abstract-low.jpg) no-repeat -95px 0px;
+    border: groove; /* Стиль рамки вокруг параграфа */
+    border-width: 3px 3px 5px 3px; /* Толщина границы */
+    padding: 5px; /* Поля вокруг текста */
+    width: 52%; /* Уменьшаем ширину рамки до размера текста */
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+.ebout:first-letter {
+    font-size: 30px;
+    color: brown;
+}
+
+.list {
+    color: black;
+    background: rgb(184, 193, 216);
+    border: groove; /* Стиль рамки вокруг параграфа */
+    border-width: 3px 3px 5px 3px; /* Толщина границы */
+    padding: 5px; /* Поля вокруг текста */
+    width: 52%; /* Уменьшаем ширину рамки до размера текста */
+    
+}
+
+.list li::before {
+    list-style-type: none; /* Стиль списка (точки, цифры) none без ничего*/
+    content: "🔥";
 }
