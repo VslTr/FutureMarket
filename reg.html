@@ -17,18 +17,21 @@
         <b><font>Регистрация</font></b>
     </h1>
 <form action="#"> <!-- (action=" ") - используется для отправки данных в метод написанный например на JS  -->
-    &nbsp;&nbsp;Ваше имя&nbsp;&nbsp;<input type="text" placeholder="Ваше имя"><br>
-    <br>
-    &nbsp;&nbsp;Пароль&nbsp;&nbsp;<input type="password" placeholder="Пароль"><br>
-    <br>
-    &nbsp;&nbsp;Ваш пол: &nbsp;&nbsp;М <input type="radio" name="pol" checked> Ж <input type="radio" name="pol"> <br>
-    <!-- двум чекбоксам выбора пола даем общее имя (name="pol") чтобы они работали в паре. Атрибут "checked" устанавливает выбор по умолчанию -->
-    <br>
-    &nbsp;&nbsp;Ваши увлечения:&nbsp;&nbsp;Резка <input type="checkbox" >&nbsp;&nbsp;Плавка <input type="checkbox">&nbsp;&nbsp;Выжегание <input type="checkbox">&nbsp;&nbsp;
-    Адский воспламенитель <input type="checkbox" checked><br>
-    <br>
-    &nbsp;&nbsp;<input type="submit" value="Отправить данные"> <input type="reset" value="Сбросить данные">
+    <div>
+        &nbsp;&nbsp;Ваше имя&nbsp;&nbsp;<input type="text" class="input-text" placeholder="Ваше имя"><br>
+        <br>
+        &nbsp;&nbsp;Пароль&nbsp;&nbsp;<input type="password" class="input-password" placeholder="Пароль"><br>
+        <br>
+        &nbsp;&nbsp;Ваш пол: &nbsp;&nbsp;М <input type="radio" name="pol" checked> Ж <input type="radio" name="pol"> <br>
+        <!-- двум чекбоксам выбора пола даем общее имя (name="pol") чтобы они работали в паре. Атрибут "checked" устанавливает выбор по умолчанию -->
+        <br>
+        &nbsp;&nbsp;Ваши увлечения:&nbsp;&nbsp;Резка <input type="checkbox" >&nbsp;&nbsp;Плавка <input type="checkbox">&nbsp;&nbsp;Выжегание <input type="checkbox">&nbsp;&nbsp;
+        Адский воспламенитель <input type="checkbox" checked><br>
+        <br>
+        &nbsp;&nbsp;<input type="submit" value="Отправить данные"> <input type="reset" value="Сбросить данные">
+    </div>
 </form> <!-- Обьеденили в форму для связки всех элементов (без "form" не будет работать сброс данных и их отправка) -->
+    
 <hr>
 <center>
     . <br>

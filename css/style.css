@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     height: 100%;
-    background-color:#f8f8f8;
+    background-color:#ffffff;
 }
 body {
     display: flex;
@@ -62,20 +62,52 @@ h1 {
     /* Блочный элемент */
 }
 
+.catalog-content {
+    flex: 1 0 auto;
+    text-decoration: none;
+}
+
 .content,
 a {
     flex: 1 0 auto;
     text-decoration: none;
     color: green;
+    font-weight: bold;
+}
+
+.content a {
+    margin-left: 91%;
 }
 
 a:hover{
     color: red;
 }
 
+.content img {
+    display: block;
+    margin: 0 auto;
+    outline: 5px outset #637564;
+}
+
+.content img:hover {
+    outline: none;
+}
+
+.content .ebout1, h3 {
+    text-align: center;
+}
+
+.ebout {
+    text-align: center;
+}
+
 .content ul {
     color:blue;
     list-style-type: none;
+}
+
+.content h2, h3 {
+    text-indent: 45px;
 }
 
 .footer,
@@ -139,12 +171,17 @@ h3 {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
-
 }
 
 .ebout:first-letter {
     font-size: 30px;
     color: brown;
+}
+
+.ebout-block p,
+.list-block .list {
+    display: block;
+    margin: 0 auto;
 }
 
 .list {
@@ -154,10 +191,40 @@ h3 {
     border-width: 3px 3px 5px 3px; /* Толщина границы */
     padding: 5px; /* Поля вокруг текста */
     width: 52%; /* Уменьшаем ширину рамки до размера текста */
-    
+    text-align: left;
 }
 
 .list li::before {
     list-style-type: none; /* Стиль списка (точки, цифры) none без ничего*/
     content: "🔥";
+}
+
+.table {
+    border: 2px solid rgb(104, 138, 104);
+    border-collapse: collapse;
+    margin-left: 40%;
+    width: 400px;
+    height: 150px;
+}
+
+.table td {
+    border: 2px solid rgb(104, 138, 104);
+    padding-left: 3px;
+    vertical-align: middle;
+}
+
+.table_name {
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.input-text:hover,
+.input-password:hover {
+    color: red;
+    background-color:rgb(218, 211, 211);
+}
+
+.input-text {
+    text-transform: capitalize;
 }
