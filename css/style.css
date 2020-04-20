@@ -15,7 +15,7 @@ h1 {
 
 .menu {
     background: #637564; /* Цвет фона */
-    margin: 0; /* Убираем отступы */
+    margin: 0;
     font-family: Arial, sans-serif; /* Шрифт */
     border: 1px inset rgb(127, 158, 126);
 }
@@ -30,7 +30,7 @@ h1 {
 }
 
 /* Обрашаемся к первому елементу меню тегу "a" */
-.menu li:nth-child(1) a {
+.menu li:nth-child(2) a {
     color: rgb(231, 191, 13);
 }
 
@@ -53,6 +53,19 @@ h1 {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.logo {
+    float: left;
+    text-align: center;
+    font-size: 40px;
+    width: 70px;
+    position: relative;
+    left: -35px;
+}
+
+.li_menu a {
+    font-weight: normal;
 }
 
 .icon {
@@ -110,12 +123,23 @@ a:hover{
     text-indent: 45px;
 }
 
-.footer,
-.footer a {
+.footer {
     flex-shrink: 0;
     text-decoration: none;
+    background-color: #637564;
+}
+.footer div {
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.footer div a {
+    color: black;
 }
 
+.footer div a:hover {
+    color: red;
+}
 h3 {
     color: rgb(2, 88, 60);
     background-color: rgb(213, 219, 213);
