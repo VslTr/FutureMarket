@@ -58,8 +58,7 @@ h1 {
 .logo {
     float: left;
     text-align: center;
-    font-size: 40px;
-    width: 70px;
+    font-size:20px;
     position: relative;
     left: -35px;
 }
@@ -75,10 +74,6 @@ h1 {
     /* Блочный элемент */
 }
 
-.catalog-content {
-    flex: 1 0 auto;
-    text-decoration: none;
-}
 
 .content,
 a {
@@ -86,6 +81,7 @@ a {
     text-decoration: none;
     color: green;
     font-weight: bold;
+    text-align: center;
 }
 
 .content a {
@@ -98,20 +94,13 @@ a:hover{
 
 .content img {
     display: block;
-    margin: 0 auto;
+    margin-left: 10px;
     outline: 5px outset #637564;
+    float: left;
 }
 
 .content img:hover {
     outline: none;
-}
-
-.content .ebout1, h3 {
-    text-align: center;
-}
-
-.ebout {
-    text-align: center;
 }
 
 .content ul {
@@ -146,6 +135,11 @@ h3 {
     /*text-align: center; - располижить текст по центру*/
 }
 
+.catalog-content {
+    flex: 1 0 auto;
+    text-decoration: none;
+}
+
 .catalog_menu a {
     text-decoration: none; /* убирает подчеркивание ссылки*/
     font-size: 18px;
@@ -162,7 +156,7 @@ h3 {
 
 }
 
-.catalog_menu img {
+.cnt img {
     border: 4px groove rgb(198, 255, 202);
 }
 
@@ -177,10 +171,45 @@ h3 {
     color: coral;
 }
 
-.catalog_menu li:nth-child(4)::after {
+.catalog_menu li:nth-child(3)::after {
     content: " - new !!!";
     color: magenta;
     text-transform: uppercase;
+}
+
+.catalog_menu li {
+    width: 700px;
+    float: right;
+    position: relative;
+    top: -400px;
+}
+
+.ebout1 {
+    display: inline;
+
+}
+
+.bay {
+    padding-top: 30px;
+}
+
+.bay input {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    outline:2px solid coral;
+}
+
+.bay input:hover {
+    background-color: coral;
+    font-weight: bold;
+    color:black;
+}
+
+.bay input:active {
+    font-weight: bold;
+    color:white;
+    background-color: rgb(104, 138, 104);
 }
 
 .ebout {
@@ -197,15 +226,14 @@ h3 {
     text-align: left;
 }
 
-.ebout:first-letter {
-    font-size: 30px;
-    color: brown;
-}
-
 .ebout-block p,
 .list-block .list {
     display: block;
     margin: 0 auto;
+}
+
+.ebout-block {
+    margin-top: 400px;
 }
 
 .list {
@@ -227,6 +255,7 @@ h3 {
     border: 2px solid rgb(104, 138, 104);
     border-collapse: collapse;
     margin-left: 40%;
+    margin-bottom: 5px;
     width: 400px;
     height: 150px;
 }
@@ -241,6 +270,10 @@ h3 {
     text-align: center;
     font-weight: bold;
     vertical-align: middle;
+}
+
+.filial {
+    text-align: center;
 }
 
 .input-text:hover,
