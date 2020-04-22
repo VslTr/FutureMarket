@@ -13,14 +13,15 @@ h1 {
     color: brown;
 }
 
-.menu {
+.header {
     background: #637564; /* Цвет фона */
     margin: 0;
+    height: 65px;
     font-family: Arial, sans-serif; /* Шрифт */
     border: 1px inset rgb(127, 158, 126);
 }
 
-.menu a {
+.header a {
     color: #fff;
     /* Белый цвет */
     text-decoration: none;
@@ -30,25 +31,28 @@ h1 {
 }
 
 /* Обрашаемся к первому елементу меню тегу "a" */
-.menu li:nth-child(2) a {
+.header li:nth-child(2) a {
     color: rgb(231, 191, 13);
 }
 
 /* Выдиляет ссылки меню другим цветом при наведении*/
-.menu li a:hover {
+.header li a:hover {
     color: rgb(51, 80, 52);
 }
 
-.menu li a:active {
+.header li a:active {
     color: coral;
 }
 
 .li_menu {
     display: inline-block;
+    float: right;
     list-style: none; /* Убираем маркеры */
     width: 100px; /* Ширина */
+    height: 90%;
+    margin-top: 2px;
     text-align: center; /* Выравниваем по центру */
-    border: 1px ridge rgb(104, 138, 104);
+    border: 1px outset rgb(104, 138, 104);
     border-bottom-right-radius: 10px; /* Закругляем углы */
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -61,6 +65,17 @@ h1 {
     font-size:20px;
     position: relative;
     left: -35px;
+    margin-top: 12px;
+    color: #eee;
+}
+
+.logo2 {
+    float: left;
+    text-align: right;
+    font-size:20px;
+    margin-top: 31px;
+    margin-left: -51px;
+    color: #eee;
 }
 
 .li_menu a {
@@ -135,7 +150,7 @@ h3 {
     /*text-align: center; - располижить текст по центру*/
 }
 
-.catalog-content {
+.catalog_menu {
     flex: 1 0 auto;
     text-decoration: none;
 }
@@ -147,19 +162,18 @@ h3 {
     font-weight: 400;
     background-color: #eaeaea;
 }
-.catalog_menu div {
-    text-decoration: none;
+.catalog_menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 auto;
+    padding-right: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
     color: #707070;
-
 }
-
-.cnt img {
-    border: 4px groove rgb(198, 255, 202);
-}
-
 
 .catalog_menu li a:hover,
 .catalog_menu li a:hover::after {
@@ -171,17 +185,14 @@ h3 {
     color: coral;
 }
 
-.catalog_menu li:nth-child(3)::after {
-    content: " - new !!!";
+.catalog_menu li:nth-child(2)::before {
+    content: " new !!!";
     color: magenta;
     text-transform: uppercase;
 }
 
-.catalog_menu li {
-    width: 700px;
-    float: right;
-    position: relative;
-    top: -400px;
+.cnt img {
+    border: 4px groove rgb(198, 255, 202);
 }
 
 .ebout1 {
@@ -284,4 +295,15 @@ h3 {
 
 .input-text {
     text-transform: capitalize;
+}
+
+.map a {
+    color:#eee;
+    font-size:12px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 374px;
+    border: 2px solid #637564;
 }
